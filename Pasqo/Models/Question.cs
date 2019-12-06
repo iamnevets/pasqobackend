@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -19,5 +20,8 @@ namespace Pasqo.Models
         public string Answer5 { get; set; }
         public string Answer6 { get; set; }
         public string CorrectAnswer { get; set; }
+
+        [NotMapped]
+        public string SelectedAnswer { get; set; }
     }
 }

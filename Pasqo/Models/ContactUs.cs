@@ -14,5 +14,6 @@ namespace Pasqo.Models
         public long SchoolId { get; set; }
         public virtual School School { get; set; }
         public string Message { get; set; }
+        public DateTime Date { get; set; }
     }
 }

@@ -14,6 +14,8 @@ namespace Pasqo.Repositories
         {
             if (contact == null) return false;
 
+            contact.Date = DateTime.UtcNow;
+
             dbContext.ContactUs.Add(contact);
             dbContext.SaveChanges();
 

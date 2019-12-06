@@ -55,7 +55,20 @@ namespace Pasqo.Controllers
         {
             try
             {
-                var exams = _examsRepository.GetAllExams();
+                var dbContext = new ApplicationDbContext();
+                var exams = _examsRepository.GetAllExams().Select(x => new
+                {
+                    x.Id,
+                    x.Title,
+                    x.SchoolId,
+                    x.School,
+                    x.ProgrammeId,
+                    x.Programme,
+                    x.CourseId,
+                    x.Course,
+                    x.Year,
+                    numOfQuestions = dbContext.Questions.Where(q => q.ExamId == x.Id).ToList().Count
+                }).ToList();
 
                 return WebHelpers.BuildResponse(exams, "Successful", true, exams.Count);
             }

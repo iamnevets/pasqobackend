@@ -21,6 +21,8 @@ namespace Pasqo.Models
         public DbSet<Exam> Exams { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<ContactUs> ContactUs { get; set; }
+        public DbSet<ExamRecord> ExamRecords { get; set; }
+        public DbSet<UserSelectedAnswer> SelectedAnswers { get; set; }
         
         public static ApplicationDbContext Create()
         {

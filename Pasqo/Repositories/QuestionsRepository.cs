@@ -14,11 +14,6 @@ namespace Pasqo.Repositories
         {
             if (question == null) return false;
 
-            if(!question.ExamId.HasValue)
-            {
-                question.ExamId = dbContext.Exams.ToList().Last().Id;
-            }
-
             dbContext.Questions.Add(question);
             dbContext.SaveChanges();
 

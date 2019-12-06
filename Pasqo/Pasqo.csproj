@@ -221,6 +221,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\ExamRecordsController.cs" />
     <Compile Include="Controllers\ExamsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProgrammesController.cs" />
@@ -241,6 +242,7 @@
     <Compile Include="Models\ContactUs.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Exam.cs" />
+    <Compile Include="Models\ExamRecord.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Privileges.cs" />
     <Compile Include="Helpers\ReturnObject.cs" />
@@ -253,6 +255,7 @@
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Repositories\ContactUsRepository.cs" />
     <Compile Include="Repositories\CoursesRepository.cs" />
+    <Compile Include="Repositories\ExamRecordsRepository.cs" />
     <Compile Include="Repositories\ExamsRepository.cs" />
     <Compile Include="Repositories\ProgrammesRepository.cs" />
     <Compile Include="Repositories\QuestionsRepository.cs" />

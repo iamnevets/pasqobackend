@@ -370,6 +370,7 @@ namespace Pasqo.Controllers
         #region Register User
 
         // POST api/Account/Register
+        [AllowAnonymous]
         [HttpPost]
         [Route("CreateUser")]
         public async Task<ReturnObject> CreateUser(ApplicationUser model)
@@ -411,6 +412,7 @@ namespace Pasqo.Controllers
                 return WebHelpers.ProcessException(ex);
             }
         }
+
 
         [HttpGet]
         [Route("GetRoles")]

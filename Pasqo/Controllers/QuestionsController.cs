@@ -25,7 +25,7 @@ namespace Pasqo.Controllers
                 var newQuestionCreated = _questionsRepository.Create(question);
                 if (newQuestionCreated == false) throw new Exception("Could not create question, Sorry!");
 
-                return WebHelpers.BuildResponse(newQuestionCreated, "Successful", true, 1);
+                return WebHelpers.BuildResponse(newQuestionCreated, "Created", true, 1);
             }
             catch (Exception e)
             {
@@ -55,7 +55,21 @@ namespace Pasqo.Controllers
         {
             try
             {
-                var questions = _questionsRepository.GetAllQuestions(id);
+                var questions = _questionsRepository.GetAllQuestions(id).Select(x => new
+                {
+                    x.Id,
+                    x.QuestionText,
+                    x.ExamId,
+                    x.Exam,
+                    x.Answer1,
+                    x.Answer2,
+                    x.Answer3,
+                    x.Answer4,
+                    x.Answer5,
+                    x.Answer6,
+                    x.CorrectAnswer,
+                    x.SelectedAnswer
+                }).ToList();
 
                 return WebHelpers.BuildResponse(questions, "Successful", true, questions.Count);
             }
@@ -74,7 +88,7 @@ namespace Pasqo.Controllers
                 var questionUpdated = _questionsRepository.Update(question);
                 if (questionUpdated == false) throw new Exception($"No question with id: {question.Id} found.\nQuestion could not be updated, Sorry!");
 
-                return WebHelpers.BuildResponse(questionUpdated, "Successful", true, 1);
+                return WebHelpers.BuildResponse(questionUpdated, "Updated", true, 1);
             }
             catch (Exception e)
             {

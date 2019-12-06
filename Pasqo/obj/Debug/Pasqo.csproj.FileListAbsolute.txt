@@ -233,10 +233,10 @@ C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\bin\System.We
 C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\obj\Debug\Pasqo.csprojAssemblyReference.cache
 C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\obj\Debug\Pasqo.Migrations.IntialModel.resources
 C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\obj\Debug\Pasqo.csproj.GenerateResource.cache
 C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\obj\Debug\Pasqo.csproj.CoreCompileInputs.cache
 C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\obj\Debug\Pasqo.csproj.CopyComplete
 C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\obj\Debug\Pasqo.dll
 C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\obj\Debug\Pasqo.pdb
+C:\Users\OGM\Documents\Projects\Pasqo\Back-End\PasqoBack-End\Pasqo\obj\Debug\Pasqo.csprojAssemblyReference.cache
